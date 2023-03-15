@@ -15,7 +15,7 @@ public class UsuarioController {
     UsuarioService service;
 
     @RequestMapping("/buscar")
-    Usuario findByusername(@RequestParam String username, @RequestParam String password) {
-        return service.findByusername(username, password);
+    Usuario findByusername(@RequestParam String username) {
+        return service.findByusername(username);
     }
 }

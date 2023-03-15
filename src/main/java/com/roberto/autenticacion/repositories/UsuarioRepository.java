@@ -9,5 +9,5 @@ import com.roberto.autenticacion.model.Usuario;
 
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, String>{
-    Usuario findByNameAndPassword(String name, String password);
+    Usuario findByName(String name);
 }
